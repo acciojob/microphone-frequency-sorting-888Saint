@@ -5,17 +5,24 @@ public class Microphone {
     private int frequencyResponse;
 
     public Microphone(String id, int frequencyResponse) {
-        // your code goes here
+        this.id = id;
+        this.frequencyResponse = frequencyResponse;
     }
 
     public String getId() {
-    	// your code goes here
         return id;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public int getFrequencyResponse() {
-    	// your code goes here
         return frequencyResponse;
+    }
+
+    public void setFrequencyResponse(int frequencyResponse) {
+        this.frequencyResponse = frequencyResponse;
     }
 
     @Override
